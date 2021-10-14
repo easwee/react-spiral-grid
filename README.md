@@ -4,4 +4,12 @@ Generates a square grid system starting from the center of parent element and bu
 
 ## Usage
 
-TBD
+```
+<SpiralGrid config={{ item: { width: 100, height: 100 } }}>
+    <div>test</div>
+    <p>test</p>
+    <h3>test</h3>
+    <a href="#">test</a>
+    <code>test</code>
+</SpiralGrid>
+```
