@@ -13,6 +13,10 @@
   "private": false,
   "main": "dist/index.ts",
   "module": "dist/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easwee/react-spiral-grid.git"
+  },
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.11.4",
