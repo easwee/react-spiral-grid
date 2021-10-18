@@ -19,6 +19,16 @@ function App() {
         <h3>13</h3>
         <a href="#">14</a>
         <code>15</code>
+        <div>16</div>
+        <p>17</p>
+        <h3>18</h3>
+        <a href="#">19</a>
+        <code>20</code>
+        <div>21</div>
+        <p>22</p>
+        <h3>23</h3>
+        <a href="#">24</a>
+        <code>25</code>
       </SpiralGrid>
     </div>
   );
