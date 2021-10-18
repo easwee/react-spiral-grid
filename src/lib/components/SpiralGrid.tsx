@@ -71,7 +71,7 @@ const SpiralGrid: FC<SpiralGridProps> = ({ children, config }) => {
   });
 
   const points: number[][] = children
-    ? getSpiralPoints(Children.count(children))
+    ? getSpiralPoints(Children.count(children) - 1)
     : [];
   const wrapperWidth = points[points.length - 1][2] * 2 * item.width;
   const wrapperHeight = points[points.length - 1][2] * 2 * item.height;
@@ -162,7 +162,7 @@ const SpiralGrid: FC<SpiralGridProps> = ({ children, config }) => {
 
           return (
             <div
-              key={point[0] + point[1]}
+              key={String(point[0]) + String(point[1])}
               style={{
                 boxSizing: "border-box",
                 position: "absolute",
