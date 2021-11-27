@@ -9,60 +9,38 @@
     "spiral",
     "grid"
   ],
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": false,
-  "main": "dist/index.ts",
-  "module": "dist/index.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/easwee/react-spiral-grid.git"
   },
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "files": [
-    "dist/*.js",
-    "dist/**/&.js"
+    "dist"
   ],
-  "dependencies": {
-    "@babel/polyfill": "^7.12.1",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "build": "rm -rf dist && rollup -c",
+    "start": "rollup -c -w"
   },
   "devDependencies": {
-    "@babel/cli": "^7.15.7",
-    "@babel/core": "^7.15.8",
-    "@babel/preset-env": "^7.15.8"
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "esbuild": "^0.14.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.60.1",
+    "rollup-plugin-dts": "^4.0.1",
+    "rollup-plugin-esbuild": "^4.7.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "typescript": "^4.5.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }

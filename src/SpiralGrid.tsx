@@ -1,5 +1,5 @@
-import { Children, FC, useEffect, useRef } from "react";
-import { SpiralGridProps } from "./interfaces";
+import React, { Children, FC, useEffect, useRef } from "react";
+import { SpiralGridProps } from "./SpiralGrid.interfaces";
 
 const innerDimensions = (node: HTMLElement) => {
   const style = getComputedStyle(node);
@@ -58,7 +58,7 @@ const getSpiralPoints = (n: number) => {
   return points;
 };
 
-const SpiralGrid: FC<SpiralGridProps> = ({ children, config }) => {
+export const SpiralGrid: FC<SpiralGridProps> = ({ children, config }) => {
   const { item } = config;
 
   const gridRef = useRef<any>();
@@ -71,7 +71,7 @@ const SpiralGrid: FC<SpiralGridProps> = ({ children, config }) => {
   });
 
   const points: number[][] = children
-    ? getSpiralPoints(Children.count(children))
+    ? getSpiralPoints(Children.count(children) - 1)
     : [];
   const wrapperWidth = points[points.length - 1][2] * 2 * item.width;
   const wrapperHeight = points[points.length - 1][2] * 2 * item.height;
@@ -162,7 +162,7 @@ const SpiralGrid: FC<SpiralGridProps> = ({ children, config }) => {
 
           return (
             <div
-              key={point[0] + point[1]}
+              key={String(point[0]) + String(point[1])}
               style={{
                 boxSizing: "border-box",
                 position: "absolute",
@@ -183,5 +183,3 @@ const SpiralGrid: FC<SpiralGridProps> = ({ children, config }) => {
     </div>
   );
 };
-
-export default SpiralGrid;

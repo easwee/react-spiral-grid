@@ -18,7 +18,7 @@ SpiralGrid will create tile wrappers around each child automatically - any kind 
 
 ## How it works
 
-![Spiral grid direction graphic](https://raw.githubusercontent.com/easwee/react-spiral-grid/master/src/docs/assets/spiral_direction.png)
+![Spiral grid direction graphic](https://raw.githubusercontent.com/easwee/react-spiral-grid/master/docs/assets/spiral_direction.png)
 
 It starts generating tiles in the center starting to the left and following a counter-clockwise direction. Tile width and height can be customized with config. For best looking grids use a set of elements that fills 3x3, 4x4, 5x5 patterns (count of child elements 9, 16, 25, 36 etc...), but any number works. I made this plugin for a chronologically sorted image gallery that shows newest images in the center and you get older content towards the edges.
 
