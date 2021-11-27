@@ -17,6 +17,10 @@
     "type": "git",
     "url": "git+https://github.com/easwee/react-spiral-grid.git"
   },
+  "files": [
+    "dist/*.js",
+    "dist/**/&.js"
+  ],
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@testing-library/jest-dom": "^5.11.4",
