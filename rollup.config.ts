@@ -8,7 +8,7 @@ export default {
   output: [
     {
       file: pkg.main,
-      format: "es",
+      format: "cjs",
       exports: "named",
       sourcemap: true,
     },
@@ -27,7 +27,7 @@ export default {
       include: /\.[jt]sx?$/, // default, inferred from `loaders` option
       exclude: /node_modules/, // default
       sourceMap: false, // default
-      minify: true,
+      minify: false,
       target: "es2017", // default, or 'es20XX', 'esnext'
       jsx: "transform", // default, or 'preserve'
       jsxFactory: "React.createElement",

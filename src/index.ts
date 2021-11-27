@@ -1,1 +1,1 @@
-export { SpiralGrid } from "./SpiralGrid";
+export { default as SpiralGrid } from "./SpiralGrid";

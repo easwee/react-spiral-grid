@@ -183,3 +183,5 @@ export const SpiralGrid: FC<SpiralGridProps> = ({ children, config }) => {
     </div>
   );
 };
+
+export default SpiralGrid;

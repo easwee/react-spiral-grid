@@ -9,14 +9,14 @@
     "spiral",
     "grid"
   ],
-  "version": "0.1.6",
+  "version": "0.1.7",
   "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/easwee/react-spiral-grid.git"
   },
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "module": "dist/es/index.js",
   "files": [
     "dist"
   ],
