@@ -17,11 +17,12 @@
   },
   "main": "dist/index.js",
   "module": "dist/es/index.js",
+  "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist && rollup -c",
+    "build": "rm -rf dist && tsc && rollup -c && rm -rf dist/dts",
     "start": "rollup -c -w"
   },
   "devDependencies": {
