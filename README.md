@@ -1,4 +1,4 @@
-# React spiral grid
+# React spiral grid &middot; [![Npm package version](https://badgen.net/npm/v/react-spiral-grid)](https://npmjs.com/package/react-spiral-grid) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 
 Generates a square/rectangular grid system starting from the center of parent element and building the grid in a spiral. Usable as a different more creative way to present content or images in browser. Accepts any kind of component as grid content.
 
